@@ -1,0 +1,1493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: radial-gradient(circle at center, #3b0057, #05000b);
+    color: white;
+}
+
+
+/* Fundo de estrelas */
+
+.stars {
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:0;
+
+}
+
+
+@keyframes starsMove {
+
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 1000px;
+    }
+
+}
+
+
+/* Introdução */
+
+.intro {
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.intro h2 {
+
+    font-size:28px;
+
+    opacity:0;
+
+    margin:15px;
+
+    animation:
+    aparecer 3s forwards;
+
+}
+
+
+.intro h2,
+.intro h1 {
+
+    opacity:0;
+
+}
+
+
+.cena1 {
+
+    animation: aparecer 2s forwards;
+
+}
+
+
+.cena2 {
+
+    animation: aparecer 2s forwards;
+
+    animation-delay:3s;
+
+}
+
+
+.cena3 {
+
+    animation: aparecer 2s forwards;
+
+    animation-delay:6s;
+
+}
+
+
+.cena4 {
+
+    animation: aparecer 3s forwards;
+
+    animation-delay:9s;
+
+}
+
+
+.intro h2,
+.intro h1 {
+
+    opacity:0;
+
+}
+
+
+.cena1 {
+
+    animation: aparecer 2s forwards;
+
+}
+
+
+.cena2 {
+
+    animation: aparecer 2s forwards;
+
+    animation-delay:3s;
+
+}
+
+
+.cena3 {
+
+    animation: aparecer 2s forwards;
+
+    animation-delay:6s;
+
+}
+
+
+.cena4 {
+
+    animation: aparecer 3s forwards;
+
+    animation-delay:9s;
+
+}
+
+
+.intro h1{
+
+    animation-delay:9s;
+
+}
+
+.intro h2:nth-child(3){
+
+    animation-delay:4s;
+
+}
+
+
+
+.intro h2 {
+
+    font-size:28px;
+
+    opacity:0;
+
+    margin:15px;
+
+    animation:
+    aparecer 3s forwards;
+
+}
+
+
+.intro h2:nth-child(2){
+
+    animation-delay:2s;
+
+}
+
+
+.intro h2:nth-child(3){
+
+    animation-delay:4s;
+
+}
+
+
+
+@keyframes aparecer {
+
+    to {
+        opacity:1;
+    }
+
+}
+
+
+@keyframes fadeOut {
+
+    0%,70% {
+        opacity:1;
+    }
+
+    100% {
+        opacity:0;
+        visibility:hidden;
+    }
+
+}
+
+
+
+/* Conteúdo */
+
+.main {
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+
+
+.name {
+
+    font-size:70px;
+
+    color:#ff9de2;
+
+    text-shadow:
+    0 0 15px #ff00aa,
+    0 0 40px #ff00aa;
+
+}
+
+
+
+.date {
+
+    margin:20px;
+    font-size:20px;
+}
+
+
+
+/* Carta */
+
+.letter {
+
+    max-width:700px;
+    margin:auto;
+
+    background:
+    rgba(255,255,255,.08);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 0 30px rgba(255,0,180,.3);
+
+}
+
+
+.letter p {
+
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:20px;
+
+}
+
+
+
+/* Coração */
+
+
+.heart {
+
+    margin:50px;
+
+    font-size:100px;
+
+    animation:
+    bater 1s infinite;
+
+}
+
+
+
+@keyframes bater {
+
+    50% {
+
+        transform:scale(1.2);
+
+    }
+
+}
+
+
+
+/* Botão música */
+
+.music {
+
+    display:inline-block;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    background:#ff1493;
+
+    color:white;
+
+    text-decoration:none;
+
+    box-shadow:
+    0 0 20px pink;
+
+}
+
+
+/* Final */
+
+
+.final {
+
+    margin-top:80px;
+
+    font-size:60px;
+
+    color:#ff4fd8;
+
+    text-shadow:
+    0 0 20px pink;
+
+}
+
+
+@media(max-width:600px){
+
+.name{
+font-size:50px;
+}
+
+.letter p{
+font-size:17px;
+}
+
+.final{
+font-size:40px;
+}
+
+}.coracao{
+
+    position:fixed;
+
+    bottom:-20px;
+
+    font-size:25px;
+
+    animation:
+    subir linear forwards;
+
+    z-index:10;
+
+}
+
+
+@keyframes subir{
+
+    from{
+
+        transform:translateY(0);
+        opacity:1;
+
+    }
+
+
+    to{
+
+        transform:translateY(-110vh);
+        opacity:0;
+
+    }
+
+}/* CÉU DE CINEMA */
+
+body::before {
+
+    content:"";
+
+    position:fixed;
+
+    width:100%;
+    height:100%;
+
+    top:0;
+    left:0;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(120,80,255,.35),
+    transparent 50%),
+    radial-gradient(circle at bottom,
+    rgba(255,80,180,.25),
+    transparent 60%);
+
+    z-index:-2;
+
+}
+
+
+/* Lua */
+
+body::after {
+
+    content:"🌙";
+
+    position:fixed;
+
+    top:80px;
+    right:80px;
+
+    font-size:120px;
+
+    filter:
+    drop-shadow(0 0 30px white);
+
+    animation:
+    luaBrilho 4s infinite alternate;
+
+}
+
+
+@keyframes luaBrilho {
+
+    from {
+
+        opacity:.7;
+        transform:scale(1);
+
+    }
+
+
+    to {
+
+        opacity:1;
+        transform:scale(1.1);
+
+    }
+
+}
+
+
+/* estrelas extras */
+
+.stars::before {
+
+    content:"";
+
+    position:fixed;
+
+    width:100%;
+    height:100%;
+
+    top:0;
+    left:0;
+
+    background-image:
+    radial-gradient(white 1.5px, transparent 2px);
+
+    background-size:
+    90px 90px;
+
+    opacity:.8;
+
+    animation:
+    estrelas 12s linear infinite;
+
+    z-index:-1;
+
+}
+
+
+@keyframes estrelas {
+
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+
+    to{
+
+        transform:translateY(-500px);
+
+    }
+
+}canvas{
+
+canvas{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+}.spotify{
+
+    max-width:600px;
+
+    margin:50px auto;
+
+    padding:25px;
+
+    background:rgba(255,255,255,0.08);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 0 30px rgba(255,0,180,.3);
+
+}
+
+
+.spotify h2{
+
+    margin-bottom:20px;
+
+    color:#ffb6ef;
+
+}.finalScene{
+
+    text-align:center;
+
+    width:100%;
+
+    margin-top:120px;
+
+    padding:80px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-sizing:border-box;
+
+}
+
+
+.finalScene h1{
+
+    font-size:70px;
+
+    color:#ff5ee8;
+
+    text-align:center;
+
+    text-shadow:
+    0 0 20px pink,
+    0 0 50px purple;
+
+}
+
+
+.finalScene p{
+
+    text-align:center;
+
+    font-size:25px;
+
+    color:white;
+
+    margin-top:25px;
+
+}
+
+
+
+@keyframes aparecerFinal{
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+@keyframes pulsarFinal{
+
+    50%{
+
+        transform:scale(1.1);
+
+    }
+
+}.contador{
+
+    margin:40px auto;
+
+    padding:25px;
+
+    max-width:500px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    box-shadow:
+    0 0 25px rgba(255,0,200,.3);
+
+}
+
+
+.contador h2{
+
+    color:#ffb6ef;
+
+}
+
+
+#tempo{
+
+    margin-top:15px;
+
+    font-size:25px;
+
+    color:white;
+
+}/* AJUSTE PARA CELULAR ❤️ */
+
+@media (max-width:600px){
+
+
+    .intro h2{
+
+        font-size:22px;
+
+        padding:0 20px;
+
+    }
+
+
+    .intro h1{
+
+        font-size:55px;
+
+    }
+
+
+    .letter{
+
+        margin:20px;
+
+        padding:25px;
+
+        font-size:18px;
+
+    }
+
+
+    .spotify{
+
+        margin:30px 20px;
+
+    }
+
+
+    .finalScene h1{
+
+        font-size:45px;
+
+    }
+
+
+    .finalScene p{
+
+        font-size:22px;
+
+    }
+
+
+    body::after{
+
+        right:20px;
+
+        top:50px;
+
+        font-size:80px;
+
+    }
+
+
+}.chuva-estrelas{
+
+    position:fixed;
+
+    top:-100%;
+
+    left:0;
+
+    width:100%;
+
+    height:200%;
+
+    pointer-events:none;
+
+    z-index:0;
+
+    background-image:
+
+    radial-gradient(white 2px, transparent 2px);
+
+    background-size:
+
+    80px 80px;
+
+    opacity:.7;
+
+    animation:
+
+    chuva 20s linear infinite;
+
+}
+
+
+@keyframes chuva{
+
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+
+    to{
+
+        transform:translateY(500px);
+
+    }
+
+
+}.finalScene{
+
+    text-align:center;
+
+    margin-top:120px;
+
+    padding:80px 20px;
+
+    animation:
+    aparecerFinal 3s forwards;
+
+}
+
+
+.finalScene p{
+
+    font-size:25px;
+
+    margin-top:25px;
+
+    color:#ffffff;
+
+    opacity:.9;
+
+}
+
+
+.finalScene p:nth-child(2){
+
+    animation:
+    brilhoTexto 3s infinite alternate;
+
+}
+
+
+
+@keyframes brilhoTexto{
+
+    from{
+
+        text-shadow:
+        0 0 5px white;
+
+    }
+
+
+    to{
+
+        text-shadow:
+        0 0 30px pink,
+        0 0 60px purple;
+
+    }
+
+}.botaoSurpresa{
+
+    margin-top:50px;
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff4fd8;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 0 20px pink;
+
+}
+
+
+.galaxiaSecret{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+    radial-gradient(circle at center,
+    #8b2cff 0%,
+    #220044 35%,
+    #000 80%);
+
+    z-index:999;
+
+    overflow:hidden;
+
+}.galaxiaSecret::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    top:50%;
+
+    left:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+    circle,
+    white 0px,
+    rgba(255,255,255,.8) 2px,
+    transparent 4px
+    );
+
+    background-size:35px 35px;
+
+    opacity:.7;
+
+    animation:
+    galaxiaMovimento 20s linear infinite;
+
+}
+
+
+@keyframes galaxiaMovimento{
+
+    from{
+
+        transform:
+        translate(-50%,-50%)
+        rotate(0deg);
+
+    }
+
+
+    to{
+
+        transform:
+        translate(-50%,-50%)
+        rotate(360deg);
+
+    }
+
+}
+
+
+
+@keyframes girarGalaxia{
+
+from{
+
+transform:
+translate(-50%,-50%)
+rotate(0deg);
+
+}
+
+to{
+
+transform:
+translate(-50%,-50%)
+rotate(360deg);
+
+}
+
+}
+
+
+.coracaoGalaxia{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    font-size:180px;
+
+    z-index:20;
+
+    filter:
+
+    drop-shadow(0 0 20px red)
+    drop-shadow(0 0 60px #ff4fd8)
+    drop-shadow(0 0 100px purple);
+
+    animation:
+
+    batimentoAmor 1.2s infinite;
+
+}
+
+
+@keyframes batimentoAmor{
+
+    0%{
+
+        transform:
+        translate(-50%,-50%)
+        scale(1);
+
+    }
+
+
+    30%{
+
+        transform:
+        translate(-50%,-50%)
+        scale(1.15);
+
+    }
+
+
+    60%{
+
+        transform:
+        translate(-50%,-50%)
+        scale(1);
+
+    }
+
+
+    100%{
+
+        transform:
+        translate(-50%,-50%)
+        scale(1);
+
+    }
+
+}
+
+
+.orbita{
+
+    .orbita{
+
+    cursor:grab;
+
+    transition:.1s;
+
+}
+
+    width:750px;
+
+    height:750px;
+
+    top:50%;
+
+    left:50%;
+
+}
+
+
+.orbita span{
+
+    position:absolute;
+
+    color:white;
+
+    font-size:22px;
+
+    white-space:nowrap;
+
+    text-shadow:
+    0 0 15px #ff7ee8,
+    0 0 30px purple;
+
+    animation:
+
+    brilhoTexto 3s infinite alternate;
+
+}
+
+
+@keyframes brilhoTexto{
+
+from{
+
+opacity:.6;
+
+transform:scale(1);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:scale(1.15);
+
+}
+
+}
+
+
+
+.orbita span:nth-child(1){
+
+    top:0;
+    left:50%;
+
+}
+
+
+.orbita span:nth-child(2){
+
+    top:15%;
+    right:10%;
+
+}
+
+
+.orbita span:nth-child(3){
+
+    bottom:20%;
+    right:0;
+
+}
+
+
+.orbita span:nth-child(4){
+
+    bottom:0;
+    left:50%;
+
+}
+
+
+.orbita span:nth-child(5){
+
+    bottom:20%;
+    left:0;
+
+}
+
+
+.orbita span:nth-child(6){
+
+    top:15%;
+    left:10%;
+
+}
+
+
+.orbita span:nth-child(7){
+
+    top:50%;
+    left:-5%;
+
+}
+
+
+
+@keyframes girarOrbita{
+
+from{
+
+transform:
+translate(-50%,-50%)
+rotate(0deg);
+
+}
+
+to{
+
+transform:
+translate(-50%,-50%)
+rotate(360deg);
+
+}
+
+}
+
+
+.galaxiaSecret span:nth-child(2){
+
+    top:20%;
+    left:50%;
+
+}
+
+
+.galaxiaSecret span:nth-child(3){
+
+    top:35%;
+    right:15%;
+
+}
+
+
+.galaxiaSecret span:nth-child(4){
+
+    bottom:25%;
+    right:20%;
+
+}
+
+
+.galaxiaSecret span:nth-child(5){
+
+    bottom:15%;
+    left:50%;
+
+}
+
+
+.galaxiaSecret span:nth-child(6){
+
+    bottom:25%;
+    left:15%;
+
+}
+
+
+.galaxiaSecret span:nth-child(7){
+
+    top:35%;
+    left:20%;
+
+}
+
+
+@keyframes orbitar{
+
+    50%{
+
+        transform:
+        translateY(-30px);
+
+    }
+
+}.espiral{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    border:2px solid rgba(255,255,255,.25);
+
+    transform:
+    translate(-50%,-50%);
+
+    box-shadow:
+
+    0 0 40px #ff4fd8;
+
+}
+
+
+.espiral1{
+
+    transform:
+    translate(-50%,-50%)
+    rotate(20deg)
+    scale(1);
+
+}
+
+
+.espiral2{
+
+    width:350px;
+
+    height:350px;
+
+    transform:
+    translate(-50%,-50%)
+    rotate(-40deg);
+
+}
+
+
+.espiral3{
+
+    width:550px;
+
+    height:550px;
+
+    transform:
+    translate(-50%,-50%)
+    rotate(70deg);
+
+}
+
+
+.galaxiaSecret span{
+
+    position:absolute;
+
+    color:white;
+
+    font-size:22px;
+
+    text-shadow:
+
+    0 0 15px pink;
+
+}
+
+
+.orbita span{
+
+    position:absolute;
+
+    color:white;
+
+    font-size:22px;
+
+    text-shadow:
+    0 0 15px pink;
+
+
+}.galaxiaSecret::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    top:0;
+    left:0;
+
+    background-image:
+
+    radial-gradient(
+    white 1px,
+    transparent 2px
+    );
+
+    background-size:
+
+    45px 45px;
+
+
+    opacity:.5;
+
+
+    animation:
+
+    estrelasMovendo 12s linear infinite;
+
+
+    pointer-events:none;
+
+}
+
+
+
+@keyframes estrelasMovendo{
+
+    from{
+
+        transform:
+        translateY(0);
+
+    }
+
+
+    to{
+
+        transform:
+        translateY(80px);
+
+    }
+
+}.mensagemUniverso{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    text-align:center;
+
+    color:white;
+
+    opacity:0;
+
+    animation:
+    aparecerUniverso 4s forwards;
+
+    animation-delay:3s;
+
+    z-index:15;
+
+}
+
+
+.mensagemUniverso p{
+
+    font-size:25px;
+
+    text-shadow:
+    0 0 20px white;
+
+}
+
+
+.mensagemUniverso h2{
+
+    font-size:45px;
+
+    color:#ff8de8;
+
+    text-shadow:
+
+    0 0 20px pink,
+    0 0 50px purple;
+
+}
+
+
+
+@keyframes aparecerUniverso{
+
+from{
+
+opacity:0;
+
+transform:
+translate(-50%,-50%)
+scale(.5);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+translate(-50%,-50%)
+scale(1);
+
+}
+
+}.entradaGalaxia{
+
+    animation:
+
+    abrirUniverso 2s forwards;
+
+}
+
+
+@keyframes abrirUniverso{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        scale(.5);
+
+        filter:
+        blur(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:
+        scale(1);
+
+        filter:
+        blur(0);
+
+    }
+
+}
