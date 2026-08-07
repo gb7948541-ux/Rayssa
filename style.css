@@ -1389,15 +1389,17 @@ rotate(360deg);
 
     position:absolute;
 
-    bottom:12vh;
+    bottom:80px;
 
-    left:50%;
+    left:0;
 
-    transform:translateX(-50%);
-
-    width:90%;
+    width:100%;
 
     text-align:center;
+
+    padding:0 20px;
+
+    box-sizing:border-box;
 
     opacity:0;
 
@@ -1414,16 +1416,11 @@ rotate(360deg);
 
         opacity:0;
 
-        transform:translateY(20px);
-
     }
-
 
     to{
 
         opacity:1;
-
-        transform:translateY(0);
 
     }
 
