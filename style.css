@@ -1389,9 +1389,9 @@ rotate(360deg);
 
     position:absolute;
 
-    bottom:20px;
+    bottom:12vh;
 
-    left:7%;
+    left:50%;
 
     transform:translateX(-50%);
 
