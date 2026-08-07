@@ -1387,6 +1387,18 @@ rotate(360deg);
 
 }.mensagemUniverso{
 
+    position:absolute;
+
+    bottom:20px;
+
+    left:7%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    text-align:center;
+
     opacity:0;
 
     animation: aparecerTexto 2s ease forwards;
