@@ -843,6 +843,10 @@ canvas{
 
 }.botaoSurpresa{
 
+    position:relative;
+    z-index:9999;
+    pointer-events:auto;
+
     margin-top:50px;
 
     padding:15px 30px;
@@ -883,7 +887,7 @@ canvas{
     #220044 35%,
     #000 80%);
 
-    z-index:999;
+    z-index:99999;
 
     overflow:hidden;
 
@@ -1383,27 +1387,33 @@ rotate(360deg);
 
 }.mensagemUniverso{
 
-    position:absolute;
-
-    top:50%;
-
-    left:50%;
-
-    transform:
-    translate(-50%,-50%);
-
-    text-align:center;
-
-    color:white;
-
     opacity:0;
 
-    animation:
-    aparecerUniverso 4s forwards;
+    animation: aparecerTexto 2s ease forwards;
 
-    animation-delay:3s;
+    animation-delay:1s;
 
-    z-index:15;
+}
+
+
+@keyframes aparecerTexto{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
 
 }
 
@@ -1533,4 +1543,33 @@ scale(1);
 .spotify{
     position:relative;
     z-index:9999;
+}.botaoSurpresa{
+
+    position:relative;
+
+    z-index:9999;
+
+    pointer-events:auto;
+
+}#texto{
+
+    animation: aparecerSuave 2s ease forwards;
+
+}
+
+
+@keyframes aparecerSuave{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
 }

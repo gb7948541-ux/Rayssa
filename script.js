@@ -174,19 +174,13 @@ Gabriel Vitor
 let indice = 0;
 
 
-function escrever(){
+function aparecer(){
 
-    if(indice < mensagem.length){
-
-        document.getElementById("texto").innerHTML += mensagem.charAt(indice);
-
-        indice++;
-
-        setTimeout(escrever,45);
-
-    }
+    document.getElementById("texto").innerHTML = mensagem;
 
 }
+
+setTimeout(aparecer,3000);
 
 
 setTimeout(escrever,3000);
@@ -389,7 +383,12 @@ function abrirGalaxia(){
 
     const galaxia = document.getElementById("galaxiaSecret");
 
-    galaxia.style.display = "block";
+    if(galaxia){
+
+        galaxia.style.display = "block";
+        galaxia.style.zIndex = "9999";
+
+    }
 
 
     const botao = document.querySelector(".botaoSurpresa");
