@@ -1043,13 +1043,7 @@ rotate(360deg);
 
 .orbita{
 
-    .orbita{
-
-    cursor:grab;
-
-    transition:.1s;
-
-}
+    position:absolute;
 
     width:750px;
 
@@ -1058,6 +1052,13 @@ rotate(360deg);
     top:50%;
 
     left:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    cursor:grab;
+
+    transition:.1s;
 
 }
 
@@ -1604,6 +1605,14 @@ scale(1);
     .mensagemUniverso h2{
 
         font-size:30px;
+
+    }
+
+}@media (max-width:600px){
+
+    .mensagemUniverso{
+
+        bottom:0 !important;
 
     }
 
