@@ -1702,4 +1702,50 @@ scale(1);
 
     }
 
+}.orbita span:nth-child(8){
+    top:5%;
+    right:30%;
+}
+
+.orbita span:nth-child(9){
+    top:35%;
+    right:-5%;
+}
+
+.orbita span:nth-child(10){
+    bottom:5%;
+    right:25%;
+}
+
+.orbita span:nth-child(11){
+    bottom:5%;
+    left:25%;
+}
+
+.orbita span:nth-child(12){
+    top:35%;
+    left:-10%;
+}.orbita span:nth-child(8){
+    top:5%;
+    right:30%;
+}
+
+.orbita span:nth-child(9){
+    top:35%;
+    right:-5%;
+}
+
+.orbita span:nth-child(10){
+    bottom:5%;
+    right:25%;
+}
+
+.orbita span:nth-child(11){
+    bottom:5%;
+    left:25%;
+}
+
+.orbita span:nth-child(12){
+    top:35%;
+    left:-10%;
 }
