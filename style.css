@@ -1432,7 +1432,7 @@ rotate(360deg);
 
 .mensagemUniverso p{
 
-    font-size:25px;
+    font-size:clamp(18px,5vw,25px);
 
     text-shadow:
     0 0 20px white;
@@ -1442,7 +1442,7 @@ rotate(360deg);
 
 .mensagemUniverso h2{
 
-    font-size:45px;
+    font-size:clamp(28px,8vw,45px);
 
     color:#ff8de8;
 
