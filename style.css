@@ -1389,23 +1389,21 @@ rotate(360deg);
 
     position:absolute;
 
-    bottom:80px;
+    bottom:60px;
 
-    left:0;
+    left:50%;
 
     width:100%;
 
+    transform:translateX(-50%);
+
     text-align:center;
 
-    padding:0 20px;
+    padding:0 15px;
 
     box-sizing:border-box;
 
-    opacity:0;
-
-    animation: aparecerTexto 2s ease forwards;
-
-    animation-delay:1s;
+    opacity:1;
 
 }
 
@@ -1578,6 +1576,34 @@ scale(1);
     to{
 
         opacity:1;
+
+    }
+
+}@media (max-width:600px){
+
+    .mensagemUniverso{
+
+        bottom:120px;
+
+        width:90%;
+
+        left:50%;
+
+        transform:translateX(-50%);
+
+    }
+
+
+    .mensagemUniverso p{
+
+        font-size:18px;
+
+    }
+
+
+    .mensagemUniverso h2{
+
+        font-size:30px;
 
     }
 
